@@ -5,5 +5,6 @@ pkgs.mkShell {
   name = "university";
   buildInputs = [
     pkgs.cargo-c
+    pkgs.cargo-cross
   ];
 }
