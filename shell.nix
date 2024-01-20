@@ -4,6 +4,6 @@ in
 pkgs.mkShell {
   name = "university";
   buildInputs = [
-    pkgs.emacs
+    pkgs.cargo-c
   ];
 }
