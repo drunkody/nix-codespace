@@ -4,7 +4,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/nix:1": {
 		  "multiUser": true,
-		  "version": "latest"
+		  "version": "latest",
+		// Needed for flakes & nix-direnv:
+		"extraNixConfig": "experimental-features = nix-command flakes,keep-outputs = true,keep-derivations = true"			
 		}
 	},
 	"customizations": {
